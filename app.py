@@ -6,7 +6,7 @@ from extract_features import extract_features
 app = Flask(__name__)
 
 # Load the trained model
-model = joblib.load('FAKE-URL-DETECTION\savedmodel.pkl')
+model = joblib.load('savedmodel.pkl')
 
 @app.route('/')
 def home():
